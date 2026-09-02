@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Homepage from "../app/components/Homepage"
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <h2>hello fahad</h2>
+      <Homepage />
     </div>
   );
 }
