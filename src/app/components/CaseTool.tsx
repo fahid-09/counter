@@ -28,20 +28,20 @@ function copyText(){
     const [textxopy, settextcopy]= useState(false)
     return (<>
         <div className={styles.casetool}>
-            <textarea id={styles.mainText} placeholder="type spmething to convert" value={text}
+            <textarea id={styles.mainText} placeholder="Type spmething to convert..." value={text}
             onChange={((e)=>settext (e.target.value))}></textarea>
             
             <div className="row" id={styles.casebtns}>
-                <div className="col-3">
+                <div className="col-3 p-0">
                     <button onClick={()=>settext(text.toUpperCase())} className={styles.casebtn}>UPPERCASE</button>
                 </div>
-                <div className="col-3">
+                <div className="col-3 p-0">
                     <button onClick={()=>settext(text.toLowerCase())} className={styles.casebtn}>lowercase</button>
                 </div>
-                <div className="col-3">
+                <div className="col-3 p-0">
                     <button onClick={() => settext(titleCase(text))} className={styles.casebtn}>Title Case</button>
                 </div>
-                <div className="col-3">
+                <div className="col-3 p-0">
                     <button onClick={() => settext(sentenceCase(text))} className={styles.casebtn}>Sentence case</button>
                 </div>
             </div>

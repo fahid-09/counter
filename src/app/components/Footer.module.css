@@ -1,0 +1,17 @@
+.footersection{
+    border-top: 1px solid #DCD5C1;
+    padding: 56px 0px;
+    border-bottom: 1px solid #DCD5C1;
+}
+.footersection h3 {
+    font-family: serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.footersection p {
+        font-size: 15px;
+    color: #5B6660;
+    line-height: 1.6;
+}
