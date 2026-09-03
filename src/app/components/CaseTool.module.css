@@ -1,0 +1,56 @@
+.casetool {
+    background: #FFFEFB;
+    border: 1px solid #DCD5C1;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+#mainText {
+    background: #FFFEFB;
+   width: 100%;
+    border: 1px solid #DCD5C1;
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-family: sans-serif;
+    font-size: 15px;
+    min-height: 90px;
+    resize: vertical;
+    color: #1C2321;
+    outline: none;
+}
+#casebtns{
+ margin: 18px 0;
+}
+.outputlabel{
+    font-size: 12px;
+    color: #5B6660;
+    margin-bottom: 8px;
+}
+.casebtn{
+    padding: 5px 8px;
+    background: #EFEADB;
+    font-size: 14px;
+    border: 1px solid #DCD5C1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.caseoutput{
+background: #EFEADB;
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-size: 15px;
+    color: #1C2321;
+    min-height: 24px;
+    word-break: break-word;
+}
+.resultbtn{
+    margin-top: 10px;
+    padding: 5px 8px;
+    /* background: #EFEADB; */
+    font-size: 14px;
+    border: 1px solid #DCD5C1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}

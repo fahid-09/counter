@@ -4,6 +4,7 @@ import { useState } from "react";
 import styles from "../components/Homepage.module.css"
 
 const Homepage = () => {
+    
    const [text, settext] = useState("");
    const wordCount = text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
    const sentenceCount = text.trim() === ""
@@ -13,6 +14,8 @@ const Homepage = () => {
     const readingTime = wordCount === 0
     ? 0
     : Math.ceil(wordCount / 200);
+
+   
     return (<>
         <div className="">
             <h2 className={styles.heading}>Know your words,<br />
@@ -22,9 +25,9 @@ const Homepage = () => {
         <div className={styles.toolcard}>
             <div className={styles.toolcardhead}>
                 <span>Word & character counter</span>
-                <button className={styles.clearbtn}>clear</button>
+                <button className={styles.clearbtn} onClick={()=>settext("")}>clear</button>
             </div>
-            <textarea id={styles.mainText} placeholder="Start typing or paste your text here..."
+            <textarea value={text} id={styles.mainText} placeholder="Start typing or paste your text here..."
            onChange={(e) => settext(e.target.value)}></textarea>
 
             <div className={styles.statsrow}>

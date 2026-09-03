@@ -1,0 +1,19 @@
+.casesection {
+    padding: 80px 0;
+    border-top: 1px solid var(--line);
+    gap: 56px;
+    align-items: start;
+}
+.casesection p {
+    color: #5B6660;
+    font-size: 16px;
+    max-width: 340px;
+}
+
+.heading {
+    font-family: serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
