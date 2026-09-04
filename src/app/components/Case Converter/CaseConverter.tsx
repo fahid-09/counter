@@ -1,5 +1,5 @@
-import styles from "../components/CaseConverter.module.css"
-import CaseTool from "../components/CaseTool"
+import styles from "../Case Converter/CaseConverter.module.css"
+import CaseTool from "../Case Tool/CaseTool"
 const CaseConverter = () => {
     return (<>
         <section className={styles.casesection}>

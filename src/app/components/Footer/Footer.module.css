@@ -15,3 +15,8 @@
     color: #5B6660;
     line-height: 1.6;
 }
+.footersection2{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+}

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import styles from "../components/Homepage.module.css"
+import styles from "../Home Page/Homepage.module.css"
 
 const Homepage = () => {
     

@@ -1,0 +1,15 @@
+.wordmark{
+    font-family:serif;
+    font-weight: 600;
+    font-size: 38px;
+}
+.idot{
+    color: #D9A441;
+}
+.navbar{
+    border-bottom: 1px solid #dcd5c1;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

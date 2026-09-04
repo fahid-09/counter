@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "../components/CaseTool.module.css"
+import styles from "../Case Tool/CaseTool.module.css"
 
 const CaseTool = () => {
     const titleCase = (text: string) => {
