@@ -8,7 +8,7 @@ import Navbar from "./components/Nav Bar/Navbar"
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Homepage />
       <Caseconverter />
       <Footer />

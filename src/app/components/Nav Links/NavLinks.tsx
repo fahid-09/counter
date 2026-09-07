@@ -7,7 +7,13 @@ const NavLinks = ({ showThird, showfourth}: { showThird: boolean, showfourth: bo
     return (<>
         <div className={styles.navLinks}>
             <ul >
-                <li><Link href={"/"}>Tools</Link></li>
+                <li className={styles.dropsown}><Link href={"/"}>Tools</Link>
+                <div className={styles.submenu}>
+                    <ul>
+                        <li><Link href={"/LoremIpsum"}>LoremIpsum</Link></li>
+                    </ul>
+                </div>
+                </li>
                 <li><Link href={"/"}>About</Link></li>
                 {showThird && <li className={styles.button}><Link href={"/"}>Get started</Link></li>}
                 {showfourth && <li><Link href={"/"}>About</Link></li>}
