@@ -89,3 +89,16 @@
     font-weight: 500;
     border-radius: 5px;
 }
+.loremipsumright {
+    background: #FFFEFB;
+    border: 1px solid #DCD5C1;
+    border-radius: 14px;
+    padding: 26px;
+}
+
+.textresult{width: 100%;
+    background-color: #efeadb;
+    min-height: 218px;
+    color: #5B6660;
+    padding: 20px;
+    border-radius: 5px;}
