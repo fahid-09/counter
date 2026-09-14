@@ -12,6 +12,8 @@ const NavLinks = ({ showThird, showfourth}: { showThird: boolean, showfourth: bo
                     <ul>
                         <li><Link href={"/LoremIpsum"}>LoremIpsum</Link></li>
                         <li><Link href={"/QRCodeGenerator"}>QR Code Generator</Link></li>
+                        <li><Link href={"/RandomPicker"}>Random Picker</Link></li>
+
                     </ul>
                 </div>
                 </li>
