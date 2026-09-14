@@ -11,6 +11,7 @@ const NavLinks = ({ showThird, showfourth}: { showThird: boolean, showfourth: bo
                 <div className={styles.submenu}>
                     <ul>
                         <li><Link href={"/LoremIpsum"}>LoremIpsum</Link></li>
+                        <li><Link href={"/QRCodeGenerator"}>QR Code Generator</Link></li>
                     </ul>
                 </div>
                 </li>
