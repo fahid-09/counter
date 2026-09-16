@@ -21,6 +21,13 @@
     gap: 10px;
     width: 100%;
 }
+.QRleft textarea{
+        resize: vertical;
+    border: 1px solid #dcd5c1;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 300px;
+}
 .QRleft input{
     font-family: inherit;
     font-size: inherit;

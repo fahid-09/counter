@@ -105,11 +105,11 @@ const RandomPicker = () => {
                     <div className={styles.QRcol}>
                         <div className={`${styles.QRleft} col-6`}>
 
-                            <h3>Selected Names</h3>
+                            <h3>Selected Values</h3>
 
                             {selectedNames.length === 0 ? (
                                 <p>
-                                    Selected names will appear here.
+                                    Selected values will appear here.
                                 </p>
                             ) : (
                                 <div>
@@ -124,7 +124,7 @@ const RandomPicker = () => {
                             <hr />
 
                             <p>
-                                Remaining names:{" "}
+                                Remaining values:{" "}
                                 {
                                     name
                                         .split("\n")
