@@ -1,0 +1,85 @@
+.pageheader{
+    padding: 50px 0px;
+    width: 500px;
+}
+.pageheader h1 {
+    font-size: 42px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.pageheader p {
+    font-size: 16px;
+    color: #5B6660;
+}
+.tabs{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.tabbutton{
+    background: #FFFEFB;
+    border: 1px solid #DCD5C1;
+    border-radius: 8px;
+    color: #5B6660;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.active{
+        background: #d9a441;
+    color: #F6F3EA;
+    border-color: #d9a441;
+}
+.toollayout{
+    display: flex;
+    gap: 30px;
+  
+}
+.panel{
+    width: 45%;
+    background: #FFFEFB;
+    padding: 30px 30px;
+    border: 1px solid #DCD5C1;
+    border-radius: 8px;
+}
+.paneltitle {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #5B6660;
+    margin-bottom: 18px;
+    font-weight: bolder;
+}
+.toollayout input{
+width: 174px;
+    border: 1px solid #DCD5C1;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    color: #5b6660;
+}
+.toollayout button{
+    width: 100%;
+    margin-top: 20px;
+    background: #d9a441;
+    border: 1px solid #d9a441;
+    color: #F6F3EA;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+.resultbox{
+    background-color: #EFEADB;
+    border-radius: 12px;
+    padding: 32px 24px;
+    width: 100%;
+    text-align: center;
+}
