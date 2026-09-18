@@ -22,7 +22,6 @@ const PercenatgeCalculator = () => {
 }
     
     return (<>
-    value of x is {X} and value of y is {Y}
         <div className={styles.pageheader}>
             <h1>Percentage Calculator</h1>
             <p>Three common percentage problems, solved instantly — pick the one that matches what you're trying to work out.</p>
@@ -54,6 +53,7 @@ const PercenatgeCalculator = () => {
                 <input type="number" value={X} onChange={(e)=>setY(Number(e.target.value))}/>?</div>
                 <button onClick={percentageChange}>Calculate</button>
             </div>}
+            
 
             <div className={styles.panel}>
                 <div className={styles.resultbox}>

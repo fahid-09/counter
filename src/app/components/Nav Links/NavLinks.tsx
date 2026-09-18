@@ -14,6 +14,8 @@ const NavLinks = ({ showThird, showfourth}: { showThird: boolean, showfourth: bo
                         <li><Link href={"/QRCodeGenerator"}>QR Code Generator</Link></li>
                         <li><Link href={"/RandomPicker"}>Random Picker</Link></li>
                         <li><Link href={"/AgeCalculator"}>Age Calculator</Link></li>
+                        <li><Link href={"/PercentageCalculator"}>Percentage Calculator</Link></li>
+
 
 
                     </ul>
