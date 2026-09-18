@@ -1,5 +1,5 @@
 "use client"
-import styles from "../QRCodeGenerator/QR.module.css"
+import styles from "../qrcode-generator/QR.module.css"
 import { useState } from "react";
 import QRCode from "qrcode";
 const Qrcode = () => {

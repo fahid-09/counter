@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "../RandomPicker/random.module.css";
+import styles from "../random-picker/random.module.css";
 
 const RandomPicker = () => {
     const [name, setname] = useState("");

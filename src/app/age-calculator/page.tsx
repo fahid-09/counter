@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "../AgeCalculator/AgeCalculator.module.css";
+import styles from "../age-calculator/AgeCalculator.module.css";
 
 const Agecalculater = () => {
     const [birthdate, setbirthdate] = useState("");

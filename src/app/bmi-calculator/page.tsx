@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import styles from "../BMICalculator/Bmi.module.css"
+import styles from "../bmi-calculator/Bmi.module.css"
 
 const BMICalculator = () => {
 

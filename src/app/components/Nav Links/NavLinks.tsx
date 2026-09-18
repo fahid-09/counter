@@ -3,23 +3,23 @@
 import styles from "../Nav Links/NavLinks.module.css";
 import Link from "next/link";
 
-const NavLinks = ({ showThird, showfourth}: { showThird: boolean, showfourth: boolean}) => {
+const NavLinks = ({ showThird, showfourth }: { showThird: boolean, showfourth: boolean }) => {
     return (<>
         <div className={styles.navLinks}>
             <ul >
                 <li className={styles.dropsown}><Link href={"/"}>Tools</Link>
-                <div className={styles.submenu}>
-                    <ul>
-                        <li><Link href={"/LoremIpsum"}>LoremIpsum</Link></li>
-                        <li><Link href={"/QRCodeGenerator"}>QR Code Generator</Link></li>
-                        <li><Link href={"/RandomPicker"}>Random Picker</Link></li>
-                        <li><Link href={"/AgeCalculator"}>Age Calculator</Link></li>
-                        <li><Link href={"/PercentageCalculator"}>Percentage Calculator</Link></li>
+                    <div className={styles.submenu}>
+                        <ul>
+                            <li><Link href={"/lorem-ipsum"}>LoremIpsum</Link></li>
+                            <li><Link href={"/qrcode-generator"}>QR Code Generator</Link></li>
+                            <li><Link href={"/random-picker"}>Random Picker</Link></li>
+                            <li><Link href={"/age-calculator"}>Age Calculator</Link></li>
+                            <li><Link href={"/percentage-calculator"}>Percentage Calculator</Link></li>
+                            <li><Link href={"/bmi-calculator"}>BMI Calculator</Link></li>
+                            <li><Link href={"/countdown-timer"}>Countdown Timer</Link></li>
 
-
-
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
                 </li>
                 <li><Link href={"/"}>About</Link></li>
                 {showThird && <li className={styles.button}><Link href={"/"}>Get started</Link></li>}

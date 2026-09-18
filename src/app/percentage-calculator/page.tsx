@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import styles from "../PercentageCalculator/percentage.module.css";
+import styles from "../percentage-calculator/percentage.module.css";
 
 // className={`${styles.btn} ${styles.active}`}
 const PercenatgeCalculator = () => {

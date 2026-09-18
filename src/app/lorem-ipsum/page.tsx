@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "../LoremIpsum/loremipsum.module.css";
+import styles from "../lorem-ipsum/loremipsum.module.css"
 
 const LoremIpsum = () => {
 
