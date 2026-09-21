@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "../age-calculator/AgeCalculator.module.css";
+import RelatedTools from "../components/Related Tools/RelatedTools";
 
 const Agecalculater = () => {
     const [birthdate, setbirthdate] = useState("");
@@ -166,6 +167,8 @@ const Agecalculater = () => {
                 </div>
                 
             </div>
+
+             <RelatedTools />
         </>
     );
 };

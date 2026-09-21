@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import styles from "../bmi-calculator/Bmi.module.css"
+import RelatedTools from "../components/Related Tools/RelatedTools";
 
 const BMICalculator = () => {
 
@@ -165,6 +166,8 @@ const BMICalculator = () => {
                 </div>
 
             </div>
+
+            <RelatedTools />
         </>
     )
 }

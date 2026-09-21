@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "../countdown-timer/countdown.module.css";
+import RelatedTools from "../components/Related Tools/RelatedTools";
 
 const Agecalculater = () => {
     const [resulttext, setresulttext] = useState(false)
@@ -186,6 +187,7 @@ const Agecalculater = () => {
                 </div>
 
             </div>
+            <RelatedTools />
         </>
     );
 };

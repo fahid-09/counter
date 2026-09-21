@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "../lorem-ipsum/loremipsum.module.css"
+import RelatedTools from "../components/Related Tools/RelatedTools";
 
 const LoremIpsum = () => {
 
@@ -163,10 +164,10 @@ const LoremIpsum = () => {
             </div>
 
 
-            <div className="row">
+            <div className={styles.toolpanel}>
 
                 {/* LEFT SIDE */}
-                <div className={`${styles.loremipsumleft} col-5`}>
+                <div className={styles.loremipsumleft}>
 
                     <span className={styles.paneltitel}>
                         SETTINGS
@@ -311,7 +312,7 @@ const LoremIpsum = () => {
 
 
                 {/* RIGHT SIDE */}
-                <div className={`${styles.loremipsumright} col-7`}>
+                <div className={styles.loremipsumright}>
 
                     <h2 className={styles.paneltitel}>
                         Result
@@ -349,6 +350,7 @@ const LoremIpsum = () => {
                 </div>
 
             </div>
+            <RelatedTools />
         </>
     );
 };

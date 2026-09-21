@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "../percentage-calculator/percentage.module.css";
+import RelatedTools from "../components/Related Tools/RelatedTools";
 
 // className={`${styles.btn} ${styles.active}`}
 const PercenatgeCalculator = () => {
@@ -62,6 +63,7 @@ const PercenatgeCalculator = () => {
                 </div>
             </div>
         </div>
+        <RelatedTools />
     </>)
 }
 

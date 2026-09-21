@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "../random-picker/random.module.css";
+import RelatedTools from "../components/Related Tools/RelatedTools";
 
 const RandomPicker = () => {
     const [name, setname] = useState("");
@@ -139,6 +140,7 @@ const RandomPicker = () => {
 
                 </div>
             </div>
+            <RelatedTools />
         </>
     );
 };

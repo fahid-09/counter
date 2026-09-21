@@ -2,6 +2,7 @@
 import styles from "../qrcode-generator/QR.module.css"
 import { useState } from "react";
 import QRCode from "qrcode";
+import RelatedTools from "../components/Related Tools/RelatedTools";
 const Qrcode = () => {
 
     const [text, settext] = useState("");
@@ -65,6 +66,8 @@ const Qrcode = () => {
             </div>
 
         </div>
+
+        <RelatedTools />
     </>)
 
 

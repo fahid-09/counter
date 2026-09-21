@@ -1,0 +1,30 @@
+.relatedTools {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.relatedTools h2 {
+    color: #153436;
+    margin-bottom: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #153436;
+    transition: 0.2s;
+}
+
+.card:hover {
+    border-color: #d9a441;
+    color: #d9a441;
+}

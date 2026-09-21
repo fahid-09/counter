@@ -41,7 +41,7 @@
 }
 .panel{
     width: 45%;
-    background: #FFFEFB;
+    /* background: #FFFEFB; */
     padding: 30px 30px;
     border: 1px solid #DCD5C1;
     border-radius: 8px;

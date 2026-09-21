@@ -12,7 +12,7 @@
 }
 
 .QRleft {
-    background: #fffefb;
+    /* background: #fffefb; */
     border: 1px solid #dcd5c1;
     border-radius: 14px;
     flex-direction: column;
