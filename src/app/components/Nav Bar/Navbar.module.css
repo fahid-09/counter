@@ -13,3 +13,7 @@
     justify-content: space-between;
     align-items: center;
 }
+.navbar a {
+    text-decoration: none;
+    color: #5b6660;
+}

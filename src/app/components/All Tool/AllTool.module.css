@@ -1,0 +1,31 @@
+.alltoolpanel h2{
+font-family:  serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.15;
+    margin-bottom: 14px;
+}
+.alltoolpanel p{
+    color: #5B6660;
+    font-size: 16px;
+}
+.panelheader{
+    font-size: 14px;
+    color: #93691F !important;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.card {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #153436;
+    transition: 0.2s;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}

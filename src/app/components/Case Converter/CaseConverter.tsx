@@ -1,3 +1,4 @@
+import AllTool from "../All Tool/AllTool";
 import styles from "../Case Converter/CaseConverter.module.css"
 import CaseTool from "../Case Tool/CaseTool"
 const CaseConverter = () => {
@@ -12,9 +13,8 @@ const CaseConverter = () => {
 
                 <section className="col-6">
                     <CaseTool />
-
-                   
                 </section>
+                <AllTool />
             </div>
         </section>
 

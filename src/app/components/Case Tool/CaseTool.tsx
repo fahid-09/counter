@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "../Case Tool/CaseTool.module.css"
+import AllTool from "../All Tool/AllTool";
 
 const CaseTool = () => {
     const titleCase = (text: string) => {
@@ -51,7 +52,10 @@ function copyText(){
            {textxopy && <span>text copied</span>}
         </div>
 
+       
+
     </>)
+    
 }
 
 export default CaseTool;
