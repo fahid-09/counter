@@ -41,7 +41,7 @@ const RelatedTools = () => {
     const relatedTools = allTools.filter(
         (tool) => tool.link !== pathname
     );
-    console.log(relatedTools)
+  
 
     return (
         <section className={styles.relatedTools}>
@@ -54,7 +54,15 @@ const RelatedTools = () => {
                         href={tool.link}
                         className={styles.card}
                     >
-                        {tool.name}
+                        <div className={styles.icon}>
+                                {tool.name
+                                    .split(" ")
+                                    .map(word => word[0])
+                                    .join("")}
+                            </div>
+                       <div className={styles.name}>
+                                {tool.name}
+                            </div>
                     </Link>
                 ))}
             </div>

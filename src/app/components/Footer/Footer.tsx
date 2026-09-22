@@ -26,7 +26,7 @@ const Footer = () => {
                     <span>Counterly — text tools, kept simple.</span>
                 </div>
                 <div>
-                    <NavLinks showThird={false} showfourth={true}/>
+                    <NavLinks showtools={false} showgetstarted={false} showabout={false}/>
                 </div>
 
             
