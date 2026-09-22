@@ -18,6 +18,8 @@ const NavLinks = ({ showtools, showgetstarted, showabout  }: {showtools:boolean,
                                 <li><Link href={"/percentage-calculator"}>Percentage Calculator</Link></li>
                                 <li><Link href={"/bmi-calculator"}>BMI Calculator</Link></li>
                                 <li><Link href={"/countdown-timer"}>Countdown Timer</Link></li>
+                                <li><Link href={"/gpa-calculator"}>Gpa Calculator</Link></li>
+
 
                             </ul>
                         </div>

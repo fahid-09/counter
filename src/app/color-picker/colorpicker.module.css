@@ -1,0 +1,24 @@
+.toolpanel {
+    display: flex;
+    gap: 30px;
+}
+
+.toolpanelleft {
+    background: #FFFEFB;
+    border: 1px solid #DCD5C1;
+    border-radius: 16px;
+    padding: 26px;
+    width: 55%;
+}
+
+.toolpanelright {
+    background-color: #fffefb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   padding: 26px;
+    width: 45%;
+     border: 1px solid #DCD5C1;
+    border-radius: 16px;
+}
