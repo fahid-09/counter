@@ -1,7 +1,7 @@
 .relatedTools {
     max-width: 1200px;
     margin: 60px auto;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 .relatedTools h2 {
@@ -26,6 +26,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.2s ease;
+    background-color: #fffefb;
 }
 
 .card:hover {

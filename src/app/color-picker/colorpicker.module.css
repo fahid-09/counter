@@ -8,17 +8,113 @@
     border: 1px solid #DCD5C1;
     border-radius: 16px;
     padding: 26px;
-    width: 55%;
+    width: 40%;
+}
+.paneltitle{
+    color: #5B6660;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+.colorbox{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.toolpanel span{
+    margin-left: 10px;
 }
 
 .toolpanelright {
     background-color: #fffefb;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
    padding: 26px;
-    width: 45%;
+    width: 60%;
+    height: 100%;
      border: 1px solid #DCD5C1;
     border-radius: 16px;
+}
+.selectedcolorcode{
+    display: flex;
+    flex-direction: column;
+}
+.selectedcolorcode label{
+    font-size: 13px;
+    color: #5B6660;
+    margin: 8px 0px;
+    display: block;
+}
+.selectedcolorcode input{
+    width: 100%;
+    border: 1px solid #DCD5C1;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    color: #1C2321;
+    outline: none;
+    margin-bottom: 20px;
+}
+.formatrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EFEADB;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+}
+.hexlabel{
+    display: flex;
+    flex-direction: column;
+}
+.copybtn{
+    border: 1px solid #dcd5c1;
+background-color: none;
+padding: 6px 12px;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.shades {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.shade {
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 6px;
+    font-size: 11px;
+}
+
+.description{
+    margin-top: 40px;
+    background: #FFFEFB;
+    border: 1px solid #DCD5C1;
+    border-radius: 14px;
+    padding: 26px;
+    margin-bottom: 24px;
+}
+.description h3{
+    font-family: serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.description p {
+    color: #5B6660;
+    font-size: 15px;
+    line-height: 1.65;
 }

@@ -1,6 +1,7 @@
 .toolpanel {
     display: flex;
     gap: 30px;
+    align-items: flex-start;
 }
 
 .toolpanelleft {
@@ -27,6 +28,10 @@
     justify-content: center;
    padding: 26px;
     width: 45%;
+    height: auto;
+    border: 1px solid #DCD5C1;
+    border-radius: 16px;
+
 }
 
 .paneltitle {
