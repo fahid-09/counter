@@ -5,7 +5,7 @@ import styles from "../countdown-timer/countdown.module.css";
 import RelatedTools from "../components/Related Tools/RelatedTools";
 
 const Agecalculater = () => {
-    const [resulttext, setresulttext] = useState(false)
+    const [resulttext, setresulttext] = useState(false);
     const [timefor, settimefor] = useState("");
     const [targetdate, settargetdate] = useState("");
     const [years, setyears] = useState(0);
@@ -16,9 +16,11 @@ const Agecalculater = () => {
     const [seconds, setseconds] = useState(0);
 
     const calculatedate = () => {
-        setresulttext(true)
+        setresulttext(true);
+
         const target = new Date(targetdate);
         const today = new Date();
+
         if (target <= today) {
             setyears(0);
             setmonths(0);
@@ -32,7 +34,6 @@ const Agecalculater = () => {
         let yearsDifference = target.getFullYear() - today.getFullYear();
         let monthsDifference = target.getMonth() - today.getMonth();
         let daysDifference = target.getDate() - today.getDate();
-
         let hoursDifference = target.getHours() - today.getHours();
         let minutesDifference = target.getMinutes() - today.getMinutes();
         let secondsDifference = target.getSeconds() - today.getSeconds();
@@ -80,7 +81,6 @@ const Agecalculater = () => {
         <>
             <div className={styles.pageheader}>
                 <h1>Countdown Calculator</h1>
-
                 <p>
                     Pick any future date — a wedding, an exam, a deadline,
                     New Year's — and see exactly how much time is left.
@@ -88,9 +88,7 @@ const Agecalculater = () => {
             </div>
 
             <div className={styles.calculator}>
-
                 <div className={styles.inputSection}>
-
                     <label>Set the Date</label>
 
                     <label>What it's for (optional)</label>
@@ -99,20 +97,16 @@ const Agecalculater = () => {
                         className={styles.dateInput}
                         type="text"
                         placeholder="e.g. My wedding day"
-                        onChange={(e) => { settimefor(e.target.value) }}
+                        onChange={(e) => settimefor(e.target.value)}
                     />
 
-                    <label htmlFor="targetdate">
-                        Target Date
-                    </label>
+                    <label htmlFor="targetdate">Target Date</label>
 
                     <input
                         className={styles.dateInput}
                         type="date"
                         id="targetdate"
-                        onChange={(e) =>
-                            settargetdate(e.target.value)
-                        }
+                        onChange={(e) => settargetdate(e.target.value)}
                     />
 
                     <button
@@ -121,72 +115,49 @@ const Agecalculater = () => {
                     >
                         Calculate
                     </button>
-
                 </div>
 
                 <div className={styles.resultSection}>
-                    {resulttext && <h2 style={{ textAlign: "center" }}>{timefor} in</h2>}
+                    {resulttext && (
+                        <h2 style={{ textAlign: "center" }}>
+                            {timefor} in
+                        </h2>
+                    )}
+
                     <div className={styles.resultRow}>
-
                         <div className={styles.resultBox}>
-                            <span className={styles.resultNumber}>
-                                {years}
-                            </span>
-                            <span className={styles.resultLabel}>
-                                Years
-                            </span>
+                            <span className={styles.resultNumber}>{years}</span>
+                            <span className={styles.resultLabel}>Years</span>
                         </div>
 
                         <div className={styles.resultBox}>
-                            <span className={styles.resultNumber}>
-                                {months}
-                            </span>
-                            <span className={styles.resultLabel}>
-                                Months
-                            </span>
+                            <span className={styles.resultNumber}>{months}</span>
+                            <span className={styles.resultLabel}>Months</span>
                         </div>
 
                         <div className={styles.resultBox}>
-                            <span className={styles.resultNumber}>
-                                {days}
-                            </span>
-                            <span className={styles.resultLabel}>
-                                Days
-                            </span>
+                            <span className={styles.resultNumber}>{days}</span>
+                            <span className={styles.resultLabel}>Days</span>
                         </div>
 
                         <div className={styles.resultBox}>
-                            <span className={styles.resultNumber}>
-                                {hours}
-                            </span>
-                            <span className={styles.resultLabel}>
-                                Hours
-                            </span>
+                            <span className={styles.resultNumber}>{hours}</span>
+                            <span className={styles.resultLabel}>Hours</span>
                         </div>
 
                         <div className={styles.resultBox}>
-                            <span className={styles.resultNumber}>
-                                {minutes}
-                            </span>
-                            <span className={styles.resultLabel}>
-                                Minutes
-                            </span>
+                            <span className={styles.resultNumber}>{minutes}</span>
+                            <span className={styles.resultLabel}>Minutes</span>
                         </div>
 
                         <div className={styles.resultBox}>
-                            <span className={styles.resultNumber}>
-                                {seconds}
-                            </span>
-                            <span className={styles.resultLabel}>
-                                Seconds
-                            </span>
+                            <span className={styles.resultNumber}>{seconds}</span>
+                            <span className={styles.resultLabel}>Seconds</span>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
+
             <RelatedTools />
         </>
     );

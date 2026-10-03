@@ -1,0 +1,57 @@
+.aboutsection{
+    width: 650px;
+    margin: 0px;
+    padding: 20px 0px 20px 0px;
+}
+.aboutsection h2 {
+font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 36px 0 12px;
+}
+.aboutsection p {
+        color: #5B6660;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.header{
+    font-family:  serif;
+    font-weight: 500;
+    font-size: clamp(30px, 4vw, 42px);
+    margin-bottom: 20px;
+}
+.lead{
+        font-size: 18px;
+    color: #1C2321;
+}
+.para{
+    color: #5B6660;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.statrow{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.statbox{
+    background: #FFFEFB;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #DCD5C1;
+}
+.number{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #23483D;
+}
+.desc{
+    font-size: 13px;
+    color: #5B6660;
+    margin-top: 4px;
+}

@@ -2,51 +2,57 @@
     max-width: 445px;
 }
 
-.loremipsumleft {
-    /* background: #FFFEFB; */
+.toolpanel {
+    display: flex;
+    gap: 30px;
+}
+
+.loremipsumleft,
+.loremipsumright {
+    width: 50%;
+    padding: 26px;
     border: 1px solid #DCD5C1;
     border-radius: 14px;
-    padding: 26px;
-    width: 50%;
 }
 
 .paneltitel {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em 0.48px;
-    color: #5B6660;
+    display: block;
     margin-bottom: 18px;
+    font-size: 12px;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #5B6660;
 }
 
 .pills {
-    background: #efeadb;
-    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     padding: 4px;
+    background: #EFEADB;
+    border-radius: 10px;
 }
 
 .pill {
     flex: 1;
-    background: none;
-    border: none;
     padding: 9px 0;
+    border: none;
+    border-radius: 7px;
+    background: none;
+    color: #5B6660;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 500;
-    color: #5B6660;
-    border-radius: 7px;
     cursor: pointer;
     transition: 0.2s ease;
 }
 
 .pill:hover {
-    background: #e5dfce;
+    background: #E5DFCE;
 }
 
 .pill.active {
-    background: #d9a441;
+    background: #D9A441;
     color: #F6F3EA;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
@@ -67,45 +73,34 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 24px;
-    font-size: 14px;
     color: #1C2321;
+    font-size: 14px;
 }
 
 .checkboxrow input {
     width: 16px;
     height: 16px;
-    accent-color: #d9a441;
-    color: #F6F3EA;
-    ;
+    accent-color: #D9A441;
 }
 
 .generatetext {
     width: 100%;
+    padding: 8px 0;
     border: none;
-    outline: none;
-    padding: 8px 0px 8px 0px;
-    background: #d9a441;
+    border-radius: 5px;
+    background: #D9A441;
     color: #F6F3EA;
     font-size: 16px;
     font-weight: 500;
-    border-radius: 5px;
-}
-.loremipsumright {
-    /* background: #FFFEFB; */
-    border: 1px solid #DCD5C1;
-    border-radius: 14px;
-    padding: 26px;
-    width: 50%;
+    cursor: pointer;
 }
 
-.textresult{width: 100%;
-    background-color: #efeadb;
+.textresult {
+    width: 100%;
     min-height: 218px;
-    color: #5B6660;
     padding: 20px;
-    border-radius: 5px;}
-
-    .toolpanel{
-        display: flex;
-        gap:30;
-    }
+    border-radius: 5px;
+    background-color: #EFEADB;
+    color: #5B6660;
+    white-space: pre-wrap;
+}

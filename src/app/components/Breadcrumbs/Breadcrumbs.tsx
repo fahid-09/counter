@@ -6,7 +6,6 @@ import styles from "./Breadcrumbs.module.css";
 
 const Breadcrumbs = () => {
     const pathname = usePathname();
-
     const paths = pathname.split("/").filter(Boolean);
 
     return (
@@ -20,10 +19,10 @@ const Breadcrumbs = () => {
 
                 return (
                     <span key={path}>
-                        <span className={styles.separator}> / </span>
+                        <span className={styles.separator}>/ &nbsp;</span>
 
                         <Link href={href} className={styles.link}>
-                            {path.replaceAll("-", "-")}
+                            {path}
                         </Link>
                     </span>
                 );

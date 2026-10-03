@@ -1,25 +1,32 @@
 import AllTool from "../All Tool/AllTool";
-import styles from "../Case Converter/CaseConverter.module.css"
-import CaseTool from "../Case Tool/CaseTool"
+import CaseTool from "../Case Tool/CaseTool";
+import styles from "../Case Converter/CaseConverter.module.css";
+
 const CaseConverter = () => {
-    return (<>
+    return (
         <section className={styles.casesection}>
             <div className="row">
+                <div className="col-6">
+                    <h2 className={styles.heading}>
+                        Change the case, keep <br /> the words.
+                    </h2>
 
-                <section className="col-6">
-                    <h2 className={styles.heading}>Change the case, keep <br /> the words.</h2>
-                    <p>Switch between uppercase, lowercase, title case and sentence case in one click — handy for headings, forms and captions.</p>
-                </section>
+                    <p>
+                        Switch between uppercase, lowercase, title case and
+                        sentence case in one click — handy for headings,
+                        forms and captions.
+                    </p>
+                </div>
 
-                <section className="col-6">
+                <div className="col-6">
                     <CaseTool />
-                </section>
+                </div>
+
                 <AllTool />
             </div>
         </section>
-
-
-    </>)
-}
+    );
+};
 
 export default CaseConverter;
+

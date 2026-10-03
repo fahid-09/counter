@@ -1,75 +1,77 @@
-"use client"
-import styles from "../qrcode-generator/QR.module.css"
+"use client";
+
 import { useState } from "react";
 import QRCode from "qrcode";
+import styles from "../qrcode-generator/QR.module.css";
 import RelatedTools from "../components/Related Tools/RelatedTools";
-const Qrcode = () => {
+import Pageheader from "./pageheader";
+import Qrcoderesult from "./qrcoderesult";
 
-    const [text, settext] = useState("");
+const Qrcode = () => {
+    const [text, setText] = useState("");
     const [qrImage, setQrImage] = useState("");
+
     const generateQR = async () => {
         if (!text) return;
+
         try {
             const url = await QRCode.toDataURL(text, {
                 width: 300,
                 margin: 2,
             });
+
             setQrImage(url);
         } catch (err) {
             console.error("QR generation failed:", err);
         }
     };
 
-    return (<>
-        <div className={styles.pageheader}>
-            <h1>QR Code Generator</h1>
+    const clearText = () => {
+        setText("");
+        setQrImage("");
+    };
 
-            <p>
-                Create a QR code quickly and easily with our free QR Code Generator. Enter any text, website URL, or other information into the tool, generate your QR code, and download it as a PNG image.
-            </p>
-        </div>
-        <div className="row">
+    return (
+        <>
+        {/* ****page header****  */}
+            <Pageheader />
+
             <div className={styles.QRrow}>
-
                 <div className={styles.QRcol}>
+                    <div className={styles.QRleft}>
+                        <input
+                            type="text"
+                            value={text}
+                            placeholder="Enter text or URL"
+                            onChange={(e) => setText(e.target.value)}
+                        />
 
-                    <div className={`${styles.QRleft} col-6`}>
+                        <button
+                            className={styles.generateQR}
+                            onClick={generateQR}
+                        >
+                            Generate QR Code
+                        </button>
 
-                        <input type="text" value={text} placeholder="enetr text or url" onChange={(e) => settext(e.target.value)} />
-                        <div className="row">
-                            <div className="col-6">
-                            <button className={styles.generateQR} onClick={generateQR}>Generate QR Code</button>
-
-                            </div>
-                            
-                            <div className="col-6">
-                                <button onClick={()=>settext("")} className={styles.cleartext} >clear  </button>
-                            </div>
-                        </div>
-
+                        <button
+                            className={styles.cleartext}
+                            onClick={clearText}
+                        >
+                            Clear
+                        </button>
                     </div>
                 </div>
 
                 <div className={styles.QRcol}>
-                    <div className={`${styles.QRleft} col-6`}>
-                        <p>Your QR Code Display Here</p>
-                        {qrImage && (
-                            <div>
-                                <img src={qrImage} alt="Generated QR Code" />
-                                <a href={qrImage} download="qrcode.png">
-                                    Download QR Code
-                                </a>
-                            </div>
-                        )}
+                    <div className={styles.QRleft}>
+                       <Qrcoderesult qrImage = {qrImage}/>
                     </div>
                 </div>
             </div>
 
-        </div>
+            <RelatedTools />
+        </>
+    );
+};
 
-        <RelatedTools />
-    </>)
-
-
-}
 export default Qrcode;

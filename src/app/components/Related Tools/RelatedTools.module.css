@@ -1,7 +1,6 @@
 .relatedTools {
     max-width: 1200px;
     margin: 60px auto;
-    /* padding: 0 20px; */
 }
 
 .relatedTools h2 {
@@ -17,7 +16,7 @@
 
 .card {
     text-decoration: none;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #E5E5E5;
     border-radius: 12px;
     padding: 25px;
     min-height: 150px;
@@ -26,7 +25,7 @@
     align-items: center;
     justify-content: center;
     transition: 0.2s ease;
-    background-color: #fffefb;
+    background-color: #FFFEFB;
 }
 
 .card:hover {
@@ -38,8 +37,8 @@
     width: 55px;
     height: 55px;
     border-radius: 10px;
-    background: #e8a33d;
-    color: #fff;
+    background: #E8A33D;
+    color: #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,5 +50,5 @@
 .name {
     font-size: 18px;
     font-weight: 600;
-    color: #5b6660
+    color: #5B6660;
 }

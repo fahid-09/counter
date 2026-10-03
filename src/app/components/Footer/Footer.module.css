@@ -1,8 +1,9 @@
-.footersection{
+.footersection {
     border-top: 1px solid #DCD5C1;
-    padding: 56px 0px;
+    padding: 56px 0;
     border-bottom: 1px solid #DCD5C1;
 }
+
 .footersection h3 {
     font-family: serif;
     font-weight: 500;
@@ -11,12 +12,13 @@
 }
 
 .footersection p {
-        font-size: 15px;
+    font-size: 15px;
     color: #5B6660;
     line-height: 1.6;
 }
-.footersection2{
+
+.footersection2 {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0;
 }

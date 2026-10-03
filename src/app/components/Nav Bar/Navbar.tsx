@@ -3,14 +3,22 @@ import styles from "../Nav Bar/Navbar.module.css";
 import NavLinks from "../Nav Links/NavLinks";
 
 const Navbar = () => {
-    return (<>
+    return (
         <nav className={styles.navbar}>
-            <Link href={"/"}>
-                <div className={styles.wordmark}>C<span className={styles.idot}>o</span>untrly</div>
+            <Link href="/">
+                <span className={styles.wordmark}>
+                    C<span className={styles.idot}>o</span>untrly
+                </span>
             </Link>
-            <NavLinks showtools={true} showgetstarted={true} showabout={false} />
+
+            <NavLinks
+                showtools={true}
+                showgetstarted={true}
+                showabout={true}
+            />
         </nav>
-    </>)
-}
+    );
+};
 
 export default Navbar;
+

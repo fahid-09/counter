@@ -11,21 +11,20 @@
     color: #5B6660;
     max-width: 480px;
     margin-top: 18px;
-
 }
 
 .clearbtn {
-   background: none;
+    background: none;
     border: none;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 13px;
-    color:#5B6660; 
+    color: #5B6660;
     cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 
-#mainText {
+.mainText {
     width: 99.3%;
     border: none;
     outline: none;
@@ -62,20 +61,24 @@
     font-weight: 500;
     color: #5B6660;
 }
-.statsrow{
+
+.statsrow {
     border-top: 1px solid #DCD5C1;
 }
-.stat{
-padding: 20px 26px;
+
+.stat {
+    padding: 20px 26px;
     border-right: 1px solid #DCD5C1;
 }
-.statlable{
+
+.statlable {
     font-size: 13px;
     color: #5B6660;
     margin-bottom: 6px;
 }
-.statvalue{
-    font-family: 'IBM Plex Mono', monospace;
+
+.statvalue {
+    font-family: "IBM Plex Mono", monospace;
     font-size: 26px;
     font-weight: 500;
     color: #23483D;

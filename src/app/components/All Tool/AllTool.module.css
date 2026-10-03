@@ -13,7 +13,7 @@
 
 .panelheader {
     font-size: 14px;
-    color: #93691F !important;
+    color: #93691F;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -30,7 +30,7 @@
 
 .card {
     text-decoration: none;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #E5E5E5;
     border-radius: 12px;
     padding: 25px;
     min-height: 150px;
@@ -50,8 +50,8 @@
     width: 55px;
     height: 55px;
     border-radius: 10px;
-    background: #e8a33d;
-    color: #fff;
+    background: #E8A33D;
+    color: #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,14 +63,14 @@
 .name {
     font-size: 18px;
     font-weight: 600;
-    color: #5b6660
+    color: #5B6660;
 }
 
 .categorylabel {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 0.06em 0.72px;
+    letter-spacing: 0.06em;
     color: #93691F;
     margin-bottom: 14px;
 }

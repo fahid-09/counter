@@ -5,42 +5,32 @@
 }
 
 .toolpanelleft {
+    width: 55%;
+    padding: 26px;
     background: #FFFEFB;
     border: 1px solid #DCD5C1;
     border-radius: 16px;
-    padding: 26px;
-    width: 55%;
-}
-
-.crossbtn {
-    border: none;
-    outline: none;
-    background: none;
-    position: relative;
-    bottom: 8px;
 }
 
 .toolpanelright {
-    background-color: #fffefb;
+    width: 45%;
+    padding: 26px;
+    background: #FFFEFB;
+    border: 1px solid #DCD5C1;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   padding: 26px;
-    width: 45%;
-    height: auto;
-    border: 1px solid #DCD5C1;
-    border-radius: 16px;
-
 }
 
 .paneltitle {
+    margin-bottom: 18px;
     font-size: 12px;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: #5B6660;
-    margin-bottom: 18px;
-    font-weight: 600;
 }
 
 .coursesection {
@@ -58,25 +48,25 @@
 
 .coursedata input {
     width: 100%;
+    padding: 9px 10px;
     border: 1px solid #DCD5C1;
     border-radius: 7px;
-    padding: 9px 10px;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    color: #1C2321;
     outline: none;
     background: #FFFEFB;
+    color: #1C2321;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
 }
 
 .coursedata select {
     width: 150px;
     height: 40px;
+    padding: 6px 10px;
     border: 1px solid #DCD5C1;
     border-radius: 7px;
-    padding: 6px 10px;
-    color: #1C2321;
     outline: none;
     background: #FFFEFB;
+    color: #1C2321;
 }
 
 .coursetitle {
@@ -85,14 +75,22 @@
     color: #5B6660;
 }
 
+.crossbtn {
+    position: relative;
+    bottom: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .addcourse {
-    margin-top: 20px;
     width: 100%;
+    margin-top: 20px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 8px;
     background: #EFEADB;
     color: #5B6660;
-    border: none;
-    padding: 8px 0;
-    border-radius: 8px;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 600;
@@ -100,13 +98,13 @@
 }
 
 .calculate {
-    margin-top: 20px;
     width: 100%;
-    background: #d9a441;
-    color: #f6f3ea;
-    border: none;
+    margin-top: 20px;
     padding: 8px 0;
+    border: none;
     border-radius: 8px;
+    background: #D9A441;
+    color: #F6F3EA;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 600;
@@ -124,15 +122,15 @@
     display: flex;
     justify-content: space-between;
     padding: 8px 16px;
-    background: #EFEADB;
     border-radius: 8px;
+    background: #EFEADB;
     font-size: 14px;
 }
 
 .result {
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 600;
-    font-size: 56px;
-    color: #d9a441;
     margin-bottom: 6px;
+    color: #D9A441;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 56px;
+    font-weight: 600;
 }

@@ -12,44 +12,34 @@
 }
 
 .QRleft {
-    /* background: #fffefb; */
-    border: 1px solid #dcd5c1;
-    border-radius: 14px;
-    flex-direction: column;
-    padding: 26px;
-    display: flex;
-    gap: 10px;
     width: 100%;
+    padding: 26px;
+    border: 1px solid #DCD5C1;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.QRleft input{
+
+.QRleft input {
+    padding: 10px;
+    border: 1px solid #DCD5C1;
+    border-radius: 5px;
+    outline: none;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    margin: 0;
-    border: 1px solid #dcd5c1;
-    outline: none;
-    border-radius: 5px;
-    padding: 10px;
 }
-.generateQR {
+
+.generateQR,
+.cleartext {
     width: 100%;
+    padding: 8px 0;
     border: none;
-    outline: none;
-    padding: 8px 0px 8px 0px;
-    background: #d9a441;
+    border-radius: 5px;
+    background: #D9A441;
     color: #F6F3EA;
     font-size: 16px;
     font-weight: 500;
-    border-radius: 5px;
-}
-.cleartext{
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 8px 0px 8px 0px;
-    background: #d9a441;
-    color: #F6F3EA;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 5px;
+    cursor: pointer;
 }

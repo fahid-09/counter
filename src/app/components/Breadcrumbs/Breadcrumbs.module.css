@@ -1,7 +1,7 @@
 .breadcrumbs {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 18px 20px;
+    padding: 18px 2px;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -15,15 +15,9 @@
 }
 
 .link:hover {
-    color: #d9a441;
+    color: #D9A441;
 }
 
 .separator {
     color: #999;
-}
-
-.current {
-    color: #153436;
-    font-weight: 500;
-    text-transform: capitalize;
 }

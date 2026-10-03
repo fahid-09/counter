@@ -1,19 +1,22 @@
-.wordmark{
-    font-family:serif;
+.wordmark {
+    font-family: serif;
     font-weight: 600;
     font-size: 38px;
 }
-.idot{
+
+.idot {
     color: #D9A441;
 }
-.navbar{
-    border-bottom: 1px solid #dcd5c1;
+
+.navbar {
+    border-bottom: 1px solid #DCD5C1;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar a {
     text-decoration: none;
-    color: #5b6660;
+    color: #5B6660;
 }
