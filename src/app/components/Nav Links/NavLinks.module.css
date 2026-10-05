@@ -1,4 +1,4 @@
-.navLinks ul {
+.navLinks > ul {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -35,14 +35,17 @@
 
 .dropdown {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .submenu {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #EFEADB;
+    top: 25px;
+    left: -110px;
+    background-color: #FFFEFB;
     width: max-content;
     border-radius: 10px;
     padding-top: 10px;
@@ -59,6 +62,7 @@
     gap: 10px;
     padding: 15px 10px;
     margin: 0;
+    list-style: none;
 }
 .categorylable{
     font-family: 'IBM Plex Mono', monospace;
@@ -68,26 +72,79 @@
     color: #93691F;
     margin-bottom: 8px;
 }
-.icon {
-    display: inline-flex;
+.singlelistitem:hover{
+    background-color: #EFEADB;
+    border-radius: 5px;
+}
+
+.listitem {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    padding: 7px 8px;
+    border-radius: 8px;
+    transition: 0.2s;
+    list-style: none;
+}
+
+.icon {
     width: 28px;
     height: 28px;
-    margin-right: 8px;
-    background: #D9A441;
-    color: white;
-    border-radius: 6px;
-    font-size: 12px;
-    font-weight: bold;
-}
-.listitem{
-
+    flex-shrink: 0;
     display: flex;
-    padding: 10px 5px 5px 10px;
-    
+    align-items: center;
+    justify-content: center;
+    background: #326b5b;
+    color: white;
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 600;
 }
-.listitem  :hover{
-    background-color: green;
-    
+
+.toolinfo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+
+.toolinfo a {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.toolinfo span {
+    color: #777;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.devider{
+    width: auto;
+    height: 1px;
+    background-color: grey;
+}
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.down,
+.up {
+    width: 18px;
+    height: 18px;
+}
+
+.up {
+    display: none;
+}
+
+.dropdown:hover .down {
+    display: none;
+}
+
+.dropdown:hover .up {
+    display: block;
 }

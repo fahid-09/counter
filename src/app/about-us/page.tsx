@@ -11,16 +11,16 @@ const About = () => {
                 the calculation happens on your device and stays there.</p>
             <div className={styles.statrow}>
                 <div className={styles.statbox}>
-                    <div className={styles.number}>1</div>
+                    <div className={styles.number}>10</div>
                     <div className={styles.desc}>tools, and counting</div>
                 </div>
                 <div className={styles.statbox}>
-                    <div className={styles.number}>1</div>
-                    <div className={styles.desc}>tools, and counting</div>
+                    <div className={styles.number}>0</div>
+                    <div className={styles.desc}>sign-ups required</div>
                 </div>
                 <div className={styles.statbox}>
-                    <div className={styles.number}>1</div>
-                    <div className={styles.desc}>tools, and counting</div>
+                    <div className={styles.number}>$0</div>
+                    <div className={styles.desc}>cost to use</div>
                 </div>
             </div>
             <h2>Why we built this</h2>

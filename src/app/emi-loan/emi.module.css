@@ -1,0 +1,65 @@
+.pageheader {
+    max-width: 445px;
+}
+.toolpanel{
+    display: flex;
+}
+.toolpanelleft{
+    background: #FFFEFB;
+    border: 1px solid #DCD5C1;
+    border-radius: 14px;
+    padding: 26px;
+}
+.leftpaneltitle{
+        font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #5B6660;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+.fixedlables{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+.fieldlabel{
+    font-size: 13px;
+    color: #5B6660;
+}
+.fieldliveval{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color:#23483D;
+    font-weight: 500;
+}
+.numinput{
+    width: 100%;
+    border: 1px solid #DCD5C1;
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    color: #1C2321;
+    outline: none;
+    margin-bottom: 10px;
+}
+.slider{
+    width: 100%;
+    accent-color: #e8a33d;
+    height: 4px;
+}
+.calbtn{
+    width: 100%;
+    background: #e8a33d;
+    color: #F6F3EA;
+    border: none;
+    padding: 13px 0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 4px;
+}
