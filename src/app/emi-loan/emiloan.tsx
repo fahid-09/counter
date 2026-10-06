@@ -11,35 +11,35 @@ const EmiLoan = () => {
     const [totalpayment, settotalpayment] = useState(0);
     const [totalinterest, settotalinterest] = useState(0);
     const [principalpercentage, setprincipalpercentage] = useState(100000);
-const [interestpercentage, setinterestpercentage] = useState(5);
+    const [interestpercentage, setinterestpercentage] = useState(5);
 
 
-   const calculateEMI = () => {
-    const monthlyRate = intrestrate / 12 / 100;
+    const calculateEMI = () => {
+        const monthlyRate = intrestrate / 12 / 100;
 
-    const emi =
-        monthlyRate === 0
-            ? loanvalue / tenure
-            : (loanvalue *
-                  monthlyRate *
-                  (1 + monthlyRate) ** tenure) /
-              ((1 + monthlyRate) ** tenure - 1);
+        const emi =
+            monthlyRate === 0
+                ? loanvalue / tenure
+                : (loanvalue *
+                    monthlyRate *
+                    (1 + monthlyRate) ** tenure) /
+                ((1 + monthlyRate) ** tenure - 1);
 
-    const totalPayment = emi * tenure;
-    const totalInterest = totalPayment - loanvalue;
+        const totalPayment = emi * tenure;
+        const totalInterest = totalPayment - loanvalue;
 
-    const principalPercentage =
-        (loanvalue / totalPayment) * 100;
+        const principalPercentage =
+            (loanvalue / totalPayment) * 100;
 
-    const interestPercentage =
-        (totalInterest / totalPayment) * 100;
+        const interestPercentage =
+            (totalInterest / totalPayment) * 100;
 
-    setresult(emi);
-    settotalpayment(totalPayment);
-    settotalinterest(totalInterest);
-    setprincipalpercentage(principalPercentage);
-    setinterestpercentage(interestPercentage);
-};
+        setresult(emi);
+        settotalpayment(totalPayment);
+        settotalinterest(totalInterest);
+        setprincipalpercentage(principalPercentage);
+        setinterestpercentage(interestPercentage);
+    };
 
     return (
         <div className={styles.toolpanel}>
@@ -156,7 +156,7 @@ const [interestpercentage, setinterestpercentage] = useState(5);
             <div className={styles.toolpanelright}>
 
                 <div className={styles.resultheading}>
-                    <span>Monthly EMI</span>
+                    {/* <span>Monthly EMI</span> */}
 
                     <div className={styles.resulttitle}>
                         {result !== undefined
@@ -176,17 +176,17 @@ const [interestpercentage, setinterestpercentage] = useState(5);
                         Payment Breakdown
                     </div>
 
-                   <div className={styles.breakdownbar}>
-    <div
-        className={styles.barprincipal}
-        style={{ width: `${principalpercentage}%` }}
-    ></div>
+                    <div className={styles.breakdownbar}>
+                        <div
+                            className={styles.barprincipal}
+                            style={{ width: `${principalpercentage}%` }}
+                        ></div>
 
-    <div
-        className={styles.intrest}
-        style={{ width: `${interestpercentage}%` }}
-    ></div>
-</div>
+                        <div
+                            className={styles.intrest}
+                            style={{ width: `${interestpercentage}%` }}
+                        ></div>
+                    </div>
 
                     <div className={styles.legendrow}>
                         <div className={styles.legenditem}>

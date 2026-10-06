@@ -159,12 +159,12 @@
 }
 
 .barprincipal {
-    
+
     background: #2f5d50;
 }
 
 .intrest {
-   
+
     background: #d9a441;
 }
 
@@ -230,6 +230,27 @@
     font-weight: 500;
 }
 
+.description {
+    background: #FFFEFB;
+    border: 1px solid #DCD5C1;
+    border-radius: 14px;
+    padding: 26px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.description h3 {
+    font-family: serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #5B6660;
+    font-size: 15px;
+    line-height: 1.65;
+}
 
 /* RESPONSIVE */
 
