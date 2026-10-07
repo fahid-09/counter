@@ -187,7 +187,8 @@
 .calbtn:hover {
     background: #d99a35;
 }
-.additem{
+
+.additem {
     background: #EFEADB;
     border: 1px dashed #DCD5C1;
     color: #5B6660;
@@ -199,7 +200,8 @@
     cursor: pointer;
     margin: 10px 0 20px;
 }
-.invoiceheader{
+
+.invoiceheader {
     display: flex;
     justify-content: space-between;
     margin-bottom: 34px;
@@ -210,46 +212,160 @@
     font-weight: 600;
     font-size: 20px;
 }
-.invparties{
+
+.invparties {
     margin-bottom: 34px;
 }
-.partydeatil{
+
+.partydeatil {
     font-size: 12.5px;
-    color:#5B6660;
+    color: #5B6660;
     line-height: 1.6;
 }
-.invoicetype{
+
+.invoicetype {
     font-family: 'Fraunces', serif;
     font-weight: 600;
     font-size: 26px;
     color: #23483D;
     /* text-align: right; */
 }
-.invoicemeta{
+
+.invoicemeta {
     font-size: 12px;
-    color:#5B6660;
+    color: #5B6660;
     text-align: right;
     margin-top: 4px;
 }
-.invoicepartlable{
-font-size: 11px;
+
+.invoicepartlable {
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.04em 0.44px;
     color: #93691F;
     margin-bottom: 6px;
 }
-.invoicepartyname{
+
+.invoicepartyname {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 2px;
 }
-.invoicepartyemail{
-font-size: 12.5px;
+
+.invoicepartyemail {
+    font-size: 12.5px;
     color: #5B6660;
     line-height: 1.6;
 }
-.invtable{
+
+.invtable {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 24px;
+}
+
+.taxrow input{
+width: 70px;
+}
+.finput{
+    width: 100%;
+    border: 1px solid #DCD5C1;
+    border-radius: 7px;
+    padding: 9px 11px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #1C2321;
+    outline: none;
+    margin-bottom: 12px;
+}
+.commentlable{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #5B6660;
+    margin-bottom: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.itemrow {
+    border-bottom: 1px solid #DCD5C1;
+
+}
+
+.itemdata {
+    padding: 5px 0px 5px 0px;
+}
+
+.itemrow th {
+    text-align: left;
+    font-size: 11px;
+    color: #5B6660;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 0 0 8px;
+    border-bottom: 1px solid #DCD5C1;
+}
+
+.itemrow td:last-child {
+
+    text-align: right;
+}
+
+.itemrow th:last-child {
+
+    text-align: right;
+}
+
+.invtotal {
+    width: 37%;
+    margin-left: auto;
+    /* border-bottom: 1px solid #DCD5C1; */
+}
+
+.invtotalrow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+    padding: 6px 0;
+    color: #5B6660;
+}
+
+.grand {
+    color: #1C2321;
+    font-weight: 700;
+    font-size: 17px;
+    border-top: 1px solid #DCD5C1;
+    margin-top: 4px;
+    padding-top: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.comment{
+    border-top: 1px solid #DCD5C1;
+       margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid #DCD5C1;
+    font-size: 12.5px;
+    color: #5B6660;
+}
+
+.descriptioncard{
+        background: #FFFEFB;
+    border: 1px solid #DCD5C1;
+    border-radius: 14px;
+    padding: 26px;
+    margin: 24px 0px;
+
+}
+.descriptioncard h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.descriptioncard p {
+    color: #5B6660;
+    font-size: 15px;
+    line-height: 1.65;
 }
