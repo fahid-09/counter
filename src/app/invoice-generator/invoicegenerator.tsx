@@ -80,7 +80,8 @@ const Invoice = () => {
 
         pdf.save("invoice.pdf");
     };
-    return (<><div className={styles.toolpanel}>
+    return (<>
+    <div className={styles.toolpanel}>
 
         {/* LEFT SIDE */}
         <div className={styles.toolpanelleft}>

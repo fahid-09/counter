@@ -1,0 +1,200 @@
+.toolpanel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.toolpanelright {
+    background: #fffefb;
+    border: 1px solid #dcd5c1;
+    border-radius: 14px;
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+.toolpanelleft {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+    background: #fffefb;
+    border: 1px solid #dcd5c1;
+    border-radius: 14px;
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+.leftpaneltitle {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #5B6660;
+    margin-bottom: 14px;
+    font-weight: 600;
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finput {
+    width: 100%;
+    border: 1px solid #DCD5C1;
+    border-radius: 7px;
+    padding: 9px 11px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13.5px;
+    color: #1C2321;
+    outline: none;
+    margin-bottom: 10px;
+}
+.fsummary{
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: inherit;
+    border: 1px solid #DCD5C1;
+    border-radius: 8px;
+    resize: vertical;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.inputrow2 {
+    display: flex;
+    gap: 10px;
+}
+
+.experiencesection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addbtn {
+    width: auto;
+    margin: 0;
+    padding: 5px 10px;
+    background: #EFEADB;
+    border: 1px dashed #DCD5C1;
+    color: #5B6660;
+    padding: 8px 8px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.entryblock {
+    background: #EFEADB;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.removeentry {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #5B6660;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.downloadbtn {
+    width: 100%;
+    height: 46px;
+    background: #e8a33d;
+    color: #fffefb;
+    border: none;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: auto;
+    padding: 10;
+}
+
+.username{
+    font-family: serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.usertitle{
+    font-size: 14px;
+    color: #23483D;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.usercontact{
+    font-size: 12px;
+    color: #5B6660;
+    margin-bottom: 28px;
+}
+.usercontact span{
+    margin-right: 14px
+}
+.resumesection{
+    margin-bottom: 24px;
+}
+.resumesection_title{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #93691F;
+    border-bottom: 1px solid #DCD5C1;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+.resumesummary{
+        font-size: 13.5px;
+    color: #5B6660;
+    line-height: 1.65;
+}
+.r_entrytop{
+        display: flex;
+    justify-content: space-between;
+}
+.r_entryrole{
+        font-size: 14px;
+    font-weight: 600;
+}
+.r_entrydate{
+    font-size: 11.5px;
+    color: #5B6660;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.r_entryorg{
+        font-size: 13px;
+    color: #23483D;
+    margin-bottom: 5px;
+}
+.r_entrydesc{
+    font-size: 13px;
+    color: #5B6660;
+    line-height: 1.6;
+}
+
+
+.skillsContainer{
+    display: flex;
+    gap: 20px;
+}
+.skillchip{
+    background: #EFEADB;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 16px;
+    color: #1C2321;
+}
