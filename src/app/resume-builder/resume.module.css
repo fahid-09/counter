@@ -25,7 +25,45 @@
     padding: 26px;
     box-sizing: border-box;
 }
+.photo_upload{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+.photo_thumb{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #EFEADB;
+    border: 1.5px dashed #DCD5C1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5B6660;
+    font-size: 11px;
+    text-align: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
 
+.photo_action{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+.photo_btn {
+    background: #EFEADB;
+    border: 1px solid #DCD5C1;
+    color: #1C2321;
+    padding: 7px 14px;
+    border-radius: 7px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
 .leftpaneltitle {
     font-size: 12px;
     text-transform: uppercase;

@@ -1,7 +1,8 @@
 "use client"
+
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import styles from "../resume-builder/resume.module.css"
 
 const ResumeBuilder = () => {
@@ -12,7 +13,8 @@ const ResumeBuilder = () => {
     const [address, setaddress] = useState("Lahore, Pakistan");
     const [summary, setsummary] = useState("A brief summary about your experience, strengths and what you're looking for.")
     const [skills, setskills] = useState<string[]>(["Java Script", "React", "Next.js", "CSS"])
-
+    const fileInputRef = useRef<HTMLInputElement>(null);
+    const [photo, setphoto] = useState<string | null>(null)
     const [experience, setexperience] = useState([
         {
             id: 1,
@@ -55,7 +57,7 @@ const ResumeBuilder = () => {
             )
         );
     };
-const downloadPDF = async () => {
+    const downloadPDF = async () => {
         const invoice = document.getElementById("invoice");
 
         if (!invoice) return;
@@ -110,12 +112,51 @@ const downloadPDF = async () => {
             },
         ]);
     };
+    console.log(photo)
     return (<>
         <div className={styles.toolpanel}>
 
             {/* LEFT SIDE */}
             <div className={styles.toolpanelleft}>
                 <div className={styles.leftpaneltitle}>Personal details</div>
+
+                <div className={styles.photo_upload}>
+
+                    <div className={styles.photo_thumb} >{photo ? <img style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        borderRadius: "inherit",
+                    }} src={photo} /> : "No photo"}</div>
+
+                    <div className={styles.photo_action}>
+                        <button
+                            type="button"
+                            className={styles.photo_btn}
+                            onClick={() => fileInputRef.current?.click()}
+                        >
+                            Upload photo
+                        </button>
+
+                        <span className={styles.photo_hint}>
+                            Optional · JPG or PNG
+                        </span>
+                    </div>
+
+                    <input
+                        ref={fileInputRef}
+                        type="file"
+                        accept="image/png, image/jpeg"
+                        style={{ display: "none" }}
+                        onChange={(e) => {
+                            const file = e.target.files?.[0];
+
+                            if (file) {
+                                setphoto(URL.createObjectURL(file));
+                            }
+                        }}
+                    />
+                </div>
                 <input type="text" className={styles.finput} onChange={(e) => setname(e.target.value)} value={name} />
                 <input type="text" className={styles.finput} onChange={(e) => setjobtitle(e.target.value)} value={jobtitle} />
                 <div className={styles.inputrow2}>
@@ -187,50 +228,50 @@ const downloadPDF = async () => {
                     <button type="button" className={styles.addbtn} onClick={addeducation}>+ add</button>
                 </div>
 
-{education.map((edu) => (
-  <div className={styles.explist} key={edu.id}>
-    <div className={styles.entryblock}>
-      <button
-        type="button"
-        className={styles.removeentry}
-        onClick={() => removeEducation(edu.id)}
-      >
-        ×
-      </button>
+                {education.map((edu) => (
+                    <div className={styles.explist} key={edu.id}>
+                        <div className={styles.entryblock}>
+                            <button
+                                type="button"
+                                className={styles.removeentry}
+                                onClick={() => removeEducation(edu.id)}
+                            >
+                                ×
+                            </button>
 
-      <input
-        type="text"
-        className={styles.finput}
-        value={edu.degree}
-        onChange={(e) =>
-          updateEducation(edu.id, "degree", e.target.value)
-        }
-      />
+                            <input
+                                type="text"
+                                className={styles.finput}
+                                value={edu.degree}
+                                onChange={(e) =>
+                                    updateEducation(edu.id, "degree", e.target.value)
+                                }
+                            />
 
-      <input
-        type="text"
-        className={styles.finput}
-        value={edu.universityname}
-        onChange={(e) =>
-          updateEducation(
-            edu.id,
-            "universityname",
-            e.target.value
-          )
-        }
-      />
+                            <input
+                                type="text"
+                                className={styles.finput}
+                                value={edu.universityname}
+                                onChange={(e) =>
+                                    updateEducation(
+                                        edu.id,
+                                        "universityname",
+                                        e.target.value
+                                    )
+                                }
+                            />
 
-      <input
-        type="text"
-        className={styles.finput}
-        value={edu.date}
-        onChange={(e) =>
-          updateEducation(edu.id, "date", e.target.value)
-        }
-      />
-    </div>
-  </div>
-))}
+                            <input
+                                type="text"
+                                className={styles.finput}
+                                value={edu.date}
+                                onChange={(e) =>
+                                    updateEducation(edu.id, "date", e.target.value)
+                                }
+                            />
+                        </div>
+                    </div>
+                ))}
 
 
                 <div className={styles.leftpaneltitle}>Skills</div>
@@ -242,7 +283,15 @@ const downloadPDF = async () => {
 
             {/* RIGHT SIDE */}
             <div id="invoice" className={styles.toolpanelright}>
-                <div className={styles.username}> {name ? name : "Your name"}</div>
+                <div className={styles.username}>
+                     <div>{name ? name : "Your name"}</div>
+                     <div>{<img style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        borderRadius: "inherit",
+                    }} src={photo? photo : "no iammge"}/>}</div>
+                     </div>
                 <div className={styles.usertitle}>{jobtitle ? jobtitle : "Job title"}</div>
                 <div className={styles.usercontact}><span>{email ? email : "youremail@.com"}</span> <span>{phone ? phone : "+92 312 3456789"}</span> <span>{address ? address : "Your address"}</span></div>
                 <div className={styles.resumesection}>
