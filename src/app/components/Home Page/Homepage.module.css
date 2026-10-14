@@ -1,86 +1,135 @@
-.heading {
-    font-size: 58px;
-    font-family: sans-serif;
+.hero h1{
+    font-family: serif;
     font-weight: 500;
+    font-size: clamp(36px, 5.5vw, 58px);
     line-height: 1.08;
-    max-width: 680px;
+    letter-spacing: -0.01em;
+    max-width: 700px;
 }
-
-.headingtext {
+.hero p {
     font-size: 18px;
     color: #5B6660;
-    max-width: 480px;
+    max-width: 520px;
     margin-top: 18px;
 }
-
-.clearbtn {
-    background: none;
-    border: none;
-    font-family: "Inter", sans-serif;
-    font-size: 13px;
-    color: #5B6660;
-    cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 3px;
+.search_box{
+    margin-top: 32px;
+    max-width: 560px;
+    position: relative;
 }
-
-.mainText {
-    width: 99.3%;
-    border: none;
-    outline: none;
-    resize: vertical;
-    min-height: 160px;
-    padding: 26px;
-    font-family: sans-serif;
-    font-size: 17px;
+.search_icon{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--ink-soft);
+    border-radius: 50%;
+}
+.search_input{
+    width: 100%;
+    border: 1px solid #DCD5C1;
+    background: #FFFEFB;
+    border-radius: 12px;
+    padding: 17px 20px 16px 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     color: #1C2321;
-    background: transparent;
-    line-height: 1.6;
+    outline: none;
 }
-
-.toolcard {
+.tabs {
+    display: flex;
+    gap: 15px;
+    margin: 26px 0 8px;
+}
+.tabbutton{
     background: #FFFEFB;
     border: 1px solid #DCD5C1;
-    border-radius: 14px;
-    margin-top: 44px;
-    overflow: hidden;
+    color: #5B6660;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.active {
+    background: #D9A441;
+    border-color: #D9A441;
+    color: #F6F3EA;
 }
 
-.toolcardhead {
+.toolcategory{
+    border-bottom: 1px solid #dcd5c1;
+    margin-top: 24px;
+}
+.tools_grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.toolcard{
+     display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    /* min-height: 148px; */
+    padding: 18px;
+    background: #fffefb;
+    border: 1px solid #dcd5c1;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.icon {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 18px 26px;
-    border-bottom: 1px solid #DCD5C1;
-    background: #DCD5C1;
-    border-radius: 5px;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    background: #D9A441;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
 }
 
-.toolcardhead span {
+.toolcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+.toolcard a {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #1C2321;
+}
+.toolname {
+    color: #17201d;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+}
+.toolname:hover {
+    color: #D9A441;
+}
+.tooldesc {
+    color: #626762;
     font-size: 14px;
-    font-weight: 500;
+    line-height: 1.5;
+}
+
+.no_results {
+    text-align: center;
+    padding: 30px 10px;
     color: #5B6660;
+    font-size: 15px;
 }
 
-.statsrow {
-    border-top: 1px solid #DCD5C1;
-}
-
-.stat {
-    padding: 20px 26px;
-    border-right: 1px solid #DCD5C1;
-}
-
-.statlable {
-    font-size: 13px;
-    color: #5B6660;
-    margin-bottom: 6px;
-}
-
-.statvalue {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 26px;
-    font-weight: 500;
-    color: #23483D;
-    font-variant-numeric: tabular-nums;
-}

@@ -1,6 +1,6 @@
-import AllTool from "../All Tool/AllTool";
-import CaseTool from "../Case Tool/CaseTool";
-import styles from "../Case Converter/CaseConverter.module.css";
+
+import styles from "../case-converter/caseconverter.module.css";
+import CaseTool from "./CaseTool";
 
 const CaseConverter = () => {
     return (
@@ -19,10 +19,9 @@ const CaseConverter = () => {
                 </div>
 
                 <div className="col-6">
-                    <CaseTool />
+                   <CaseTool />
                 </div>
 
-                <AllTool />
             </div>
         </section>
     );

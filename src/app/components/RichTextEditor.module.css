@@ -1,0 +1,46 @@
+.editor {
+    border: 1px solid #dcd5c1;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fffefb;
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 10px;
+    border-bottom: 1px solid #dcd5c1;
+}
+
+.toolbar button {
+    padding: 6px 10px;
+    border: 1px solid #dcd5c1;
+    border-radius: 5px;
+    background: #fffefb;
+    cursor: pointer;
+}
+
+.toolbar button:hover {
+    background: #f0ece2;
+}
+
+.content {
+    min-height: 140px;
+    padding: 12px;
+}
+
+.content :global(.tiptap) {
+    min-height: 115px;
+    outline: none;
+}
+
+.content :global(.tiptap ul) {
+    list-style-type: disc;
+    padding-left: 24px;
+}
+
+.content :global(.tiptap ol) {
+    list-style-type: decimal;
+    padding-left: 24px;
+}

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "../Case Tool/CaseTool.module.css";
+import styles from "../case-converter/CaseTool.module.css";
 
 const CaseTool = () => {
     const [text, setText] = useState("");

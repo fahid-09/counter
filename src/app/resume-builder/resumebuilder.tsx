@@ -1,5 +1,5 @@
 "use client"
-
+import image from "../../../public/images (1).jpeg"
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useState, useRef } from "react";
@@ -283,15 +283,11 @@ const ResumeBuilder = () => {
 
             {/* RIGHT SIDE */}
             <div id="invoice" className={styles.toolpanelright}>
-                <div className={styles.username}>
-                     <div>{name ? name : "Your name"}</div>
-                     <div>{<img style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                        borderRadius: "inherit",
-                    }} src={photo? photo : "no iammge"}/>}</div>
-                     </div>
+                <div className={styles.photosection}>
+                    <div className={styles.username}>{name ? name : "Your name"}</div>
+                    <div>{<img src={photo ? photo : image.src} className={styles.image} />}
+                    </div>
+                </div>
                 <div className={styles.usertitle}>{jobtitle ? jobtitle : "Job title"}</div>
                 <div className={styles.usercontact}><span>{email ? email : "youremail@.com"}</span> <span>{phone ? phone : "+92 312 3456789"}</span> <span>{address ? address : "Your address"}</span></div>
                 <div className={styles.resumesection}>
