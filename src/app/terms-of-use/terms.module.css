@@ -1,0 +1,25 @@
+.updated {
+    font-size: 13px;
+    color: #5B6660;
+    margin-bottom: 32px;
+}
+
+.head1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(28px, 4vw, 38px);
+    margin-bottom: 8px;
+}
+
+.head2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 28px 0 10px;
+}
+
+.paratext {
+    color: #5B6660;
+    font-size: 15px;
+    margin-bottom: 12px;
+}

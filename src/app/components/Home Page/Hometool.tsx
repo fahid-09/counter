@@ -21,7 +21,7 @@ const Hometool = () => {
     const tools = [
         { name: "Age Calculator", description: "Years, months, days", category: "Calculator", href: "/age-calculator" },
         { name: "BMI Calculator", description: "Height & weight → BMI", category: "Calculator", href: "/bmi-calculator" },
-        { name: "CountDown Timer", description: "Days until any date", category: "Calculator", href: "/countdown-timer" },
+        { name: "Count Down Timer", description: "Days until any date", category: "Calculator", href: "/countdown-timer" },
         { name: "GPA Calculator", description: "Weighted 4.0 scale", category: "Calculator", href: "/gpa-calculator" },
         { name: "Percentage Calculator", description: "3 common % problems", category: "Calculator", href: "/percentage-calculator" },
         { name: "EMI Loan", description: "EMI loan amount", category: "Calculator", href: "/emi-loan" },

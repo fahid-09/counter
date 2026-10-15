@@ -6,6 +6,10 @@ import styles from "../qrcode-generator/QR.module.css";
 import RelatedTools from "../components/Related Tools/RelatedTools";
 import Pageheader from "./pageheader";
 import Qrcoderesult from "./qrcoderesult";
+export const metadata = {
+  title: "QR Code Generator — Free & Instant | Countrly",
+  description: "Turn any link or text into a downloadable QR code, free and instantly, right in your browser.",
+};
 
 const Qrcode = () => {
     const [text, setText] = useState("");

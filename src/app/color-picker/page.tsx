@@ -4,6 +4,11 @@ import RelatedTools from "../components/Related Tools/RelatedTools";
 import styles from "../color-picker/colorpicker.module.css"
 import { useState } from "react";
 import Description from "./Description";
+
+export const metadata = {
+  title: "Color Converter — HEX to RGB to HSL | Countrly",
+  description: "Convert colors between HEX, RGB and HSL instantly, with a live preview and nearby shades.",
+};
 const GpaCalculator = () => {
 
     const generateShades = (hex: string) => {
