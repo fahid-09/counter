@@ -1,0 +1,44 @@
+.contactform {
+    max-width: 640px;
+    background: #FFFEFB;
+    border: 1px solid #DCD5C1;
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.text_input {
+    width: 100%;
+    border: 1px solid #DCD5C1;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #1C2321;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.message {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.6;
+    width: 100%;
+    border: 1px solid #dcd5c1;
+    color: #1c2321;
+    border-radius: 8px;
+}
+
+.send_btn{
+    background: #D9A441;
+    color: #F6F3EA;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.form_lable{
+    margin-bottom: 10px;
+}
