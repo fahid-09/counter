@@ -38,7 +38,9 @@ const Footer = () => {
                 <NavLinks
                     showtools={false}
                     showgetstarted={false}
-                    showabout={false}
+                    showabout={true}
+                    showprivacy={true}
+                    showcontact= {true}
                 />
             </section>
         </>

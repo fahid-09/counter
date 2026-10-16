@@ -8,6 +8,8 @@ type NavLinksProps = {
     showtools: boolean;
     showgetstarted: boolean;
     showabout: boolean;
+    showprivacy: boolean;
+    showcontact: boolean
 };
 
 
@@ -15,6 +17,9 @@ const NavLinks = ({
     showtools,
     showgetstarted,
     showabout,
+    showprivacy,
+    showcontact
+
 }: NavLinksProps) => {
 
     const getInitials = (name: string) => {
@@ -247,9 +252,21 @@ const NavLinks = ({
                     </li>
                 )}
 
+                {showprivacy && (
+                    <li>
+                        <Link href="/privacy-policy">Privacy</Link>
+                    </li>
+                )}
+
                 {showgetstarted && (
                     <li className={styles.button}>
                         <Link href="/">Get Started</Link>
+                    </li>
+                )}
+
+                {showcontact && (
+                    <li>
+                        <Link href="/contact-us">Contact Us</Link>
                     </li>
                 )}
             </ul>

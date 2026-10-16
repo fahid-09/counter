@@ -13,8 +13,10 @@ const Navbar = () => {
 
             <NavLinks
                 showtools={true}
-                showgetstarted={true}
+                showgetstarted={false}
                 showabout={true}
+                showprivacy={false}
+                showcontact= {true}
             />
         </nav>
     );

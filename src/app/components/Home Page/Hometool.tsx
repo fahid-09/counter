@@ -4,6 +4,7 @@ import { Search } from "lucide-react";
 import { useState } from "react";
 import styles from "../Home Page/Homepage.module.css";
 import Link from "next/link";
+import { count } from "console";
 
 const Hometool = () => {
     const [active, setactive] = useState("All");
@@ -25,20 +26,26 @@ const Hometool = () => {
         { name: "GPA Calculator", description: "Weighted 4.0 scale", category: "Calculator", href: "/gpa-calculator" },
         { name: "Percentage Calculator", description: "3 common % problems", category: "Calculator", href: "/percentage-calculator" },
         { name: "EMI Loan", description: "EMI loan amount", category: "Calculator", href: "/emi-loan" },
-
         { name: "Lorem Ipsum", description: "Generate text for mockups", category: "Generator & Pickers", href: "/lorem-ipsum" },
         { name: "QR Code", description: "Get downloadable QR of any text", category: "Generator & Pickers", href: "/qrcode-generator" },
         { name: "Random Picker", description: "Pick items randomly", category: "Generator & Pickers", href: "/random-picker" },
-
         { name: "Resume Builder", description: "Ready-to-print resume", category: "Business Tool", href: "/resume-builder" },
         { name: "Invoice Generator", description: "Ready-to-print invoice", category: "Business Tool", href: "/invoice-generator" },
-
         { name: "Unit Converter", description: "Length, weight, temperature", category: "Converter", href: "/unit-converter" },
         { name: "Color Picker", description: "HEX, RGB, HSL", category: "Converter", href: "/color-picker" },
-
         { name: "Word Counter", description: "Count words as you type", category: "Text Tool", href: "/word-counter" },
         { name: "Case Converter", description: "Switch between uppercase and lowercase", category: "Text Tool", href: "/case-converter" },
     ];
+    // const totalcalculators = tools.filter((e) => e.category === "Calculator");
+    // const totalgenerators = tools.filter((e) => e.category === "Generator & Pickers");
+    // const totalbusiness = tools.filter((e) => e.category === "Business Tool");
+    // const totaltexttool = tools.filter((e) => e.category === "Text Tool");
+    // const totalconverter = tools.filter((e) => e.category === "Converter");
+
+
+
+
+
 
     const getInitials = (name: string) => {
         return name
@@ -90,18 +97,25 @@ const Hometool = () => {
 
             {/* Category Tabs */}
             <div className={styles.tabs}>
-                {alltabs.map((tab) => (
-                    <button
-                        type="button"
-                        key={tab}
-                        onClick={() => setactive(tab)}
-                        className={`${styles.tabbutton} ${
-                            active === tab ? styles.active : ""
-                        }`}
-                    >
-                        {tab}
-                    </button>
-                ))}
+                {alltabs.map((tab) => {
+                    const count =
+                        tab === "All"
+                            ? tools.length
+                            : tools.filter((tool) => tool.category === tab).length;
+
+                    return (
+                        <button
+                            type="button"
+                            key={tab}
+                            onClick={() => setactive(tab)}
+                            className={`${styles.tabbutton} ${active === tab ? styles.active : ""
+                                }`}
+                        >
+                            {tab}
+                            <span className={styles.tab_count}>{count}</span>
+                        </button>
+                    );
+                })}
             </div>
 
             {/* Tools Grid */}
@@ -115,11 +129,12 @@ const Hometool = () => {
                 }
 
                 return (
+
                     <section key={category}>
+
                         <h2 className={styles.toolcategory}>
                             {category}
                         </h2>
-
                         <div className={styles.tools_grid}>
                             {categoryTools.map((tool) => (
                                 <div
