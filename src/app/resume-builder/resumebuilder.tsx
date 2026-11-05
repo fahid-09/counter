@@ -3,7 +3,8 @@ import image from "../../../public/images (1).jpeg"
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useState, useRef } from "react";
-import styles from "../resume-builder/resume.module.css"
+import styles from "../resume-builder/resume.module.css";
+import Pageheader from "./pageheader";
 
 const ResumeBuilder = () => {
     const [name, setname] = useState("Your name");
@@ -114,6 +115,7 @@ const ResumeBuilder = () => {
     };
     console.log(photo)
     return (<>
+    <Pageheader/>
         <div className={styles.toolpanel}>
 
             {/* LEFT SIDE */}

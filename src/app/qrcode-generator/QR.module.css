@@ -2,6 +2,13 @@
     max-width: 445px;
 }
 
+.pageheader h1 {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+}
+
 .QRrow {
     display: flex;
     gap: 30px;

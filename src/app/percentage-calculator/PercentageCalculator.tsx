@@ -147,7 +147,7 @@ const PercentageCalculator = () => {
                                     setY(Number(e.target.value))
                                 }
                             />
-                            ?
+                           {" "} ?
                         </div>
 
                         <button onClick={percentageChange}>

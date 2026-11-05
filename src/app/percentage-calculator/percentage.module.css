@@ -1,6 +1,5 @@
 .pageheader {
     width: 500px;
-    padding: 50px 0;
 }
 
 .pageheader h1 {
@@ -61,7 +60,7 @@
 }
 
 .toollayout input {
-    width: 174px;
+    width: 159px;
     padding: 6px 10px;
     border: 1px solid #DCD5C1;
     border-radius: 5px;

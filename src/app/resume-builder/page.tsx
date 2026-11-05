@@ -1,4 +1,4 @@
-import Pageheader from "./pageheader";
+
 import ResumeBuilder from "./resumebuilder";
 
 
@@ -8,7 +8,7 @@ export const metadata = {
 };
 const ResumePage = ()=>{
     return(<>
-    <Pageheader/>
+    
     <ResumeBuilder />
     </>)
 }

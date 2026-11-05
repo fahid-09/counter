@@ -1,5 +1,4 @@
 import Invoice from "./invoicegenerator";
-import Pageheader from "./pageheader";
 
 
 export const metadata = {
@@ -8,7 +7,7 @@ export const metadata = {
 };
 const InvoiceGeneratorPage = ()=>{
     return(<>
-    <Pageheader/>
+
     <Invoice />
     </>)
 }

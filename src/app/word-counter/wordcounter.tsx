@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "../word-counter/wordcounter.module.css";
+import Pageheader from "./pageheader";
 
 const Wordcounter = () => {
     const [text, setText] = useState("");
@@ -21,18 +22,7 @@ const Wordcounter = () => {
 
     return (
         <>
-            <div>
-                <h2 className={styles.heading}>
-                    Know your words,
-                    <br />
-                    down to the letter.
-                </h2>
-
-                <p className={styles.headingtext}>
-                    Paste your text below and watch the count update as you
-                    type. No sign-up, no clutter — just the numbers you need.
-                </p>
-            </div>
+            <Pageheader/>
 
             <div className={styles.toolcard}>
                 <div className={styles.toolcardhead}>

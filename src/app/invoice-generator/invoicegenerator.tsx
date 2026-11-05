@@ -1,4 +1,6 @@
-"use client"
+"use client";
+
+import Pageheader from "./pageheader";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useState, useEffect } from "react";
@@ -81,6 +83,8 @@ const Invoice = () => {
         pdf.save("invoice.pdf");
     };
     return (<>
+
+        <Pageheader/>
     <div className={styles.toolpanel}>
 
         {/* LEFT SIDE */}
